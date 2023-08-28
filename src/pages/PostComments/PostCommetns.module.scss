@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.postCommentsContainer {
+  padding: 50px;
+  button {
+    @include button-base;
+    margin-bottom: 1em;
+  }
+}

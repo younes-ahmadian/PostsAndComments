@@ -1,0 +1,18 @@
+@import "../../styles/mixins";
+
+.tableContainer {
+  width: 80%;
+  border-collapse: collapse;
+  th,
+  td {
+    @include border;
+    text-align: center;
+    padding: 5px;
+  }
+  th {
+    background-color: $headerBackground;
+  }
+  td {
+    background-color: $textContainerBackground;
+  }
+}
