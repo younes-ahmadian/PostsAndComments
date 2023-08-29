@@ -19,6 +19,6 @@
   }
 }
 
-@mixin border($borderWdith: 1px) {
+@mixin commonBorder($borderWdith: 1px) {
   border: $borderWdith solid $black;
 }

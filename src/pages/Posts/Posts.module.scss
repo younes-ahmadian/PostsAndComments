@@ -10,13 +10,13 @@
   width: 80%;
   border-radius: 5px;
   margin: 50px 0;
-  @include border(3px);
+  @include commonBorder(3px);
 
   h2 {
     @include centeredElements;
     margin: 0;
     padding: 20px;
-    background-color: $blue1;
+    background-color: $lightBlue;
     border-bottom: 3px solid $black;
   }
 
@@ -28,7 +28,7 @@
 
   h1,
   div {
-    @include border;
+    @include commonBorder;
     padding: 8px 15px;
     margin: 0;
   }

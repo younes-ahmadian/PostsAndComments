@@ -2,13 +2,13 @@ import { Dispatch, FC, SetStateAction, useEffect } from "react";
 
 const useIntersectionObserver = (
   lastElement: Element | null,
-  setNumberOfPostsToShow: Dispatch<SetStateAction<number>>
+  setNumberOfElementsToShow: Dispatch<SetStateAction<number>>
 ) => {
   let observerRef: IntersectionObserver;
   useEffect(() => {
     observerRef = new IntersectionObserver(([entery]) => {
       if (entery.isIntersecting) {
-        setNumberOfPostsToShow((prev) => prev + 10);
+        setNumberOfElementsToShow((prev) => prev + 10);
       }
     });
 

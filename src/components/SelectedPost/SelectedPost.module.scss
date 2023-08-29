@@ -2,11 +2,11 @@
 @import "../../styles/mixins";
 
 .selectedPostContainer {
-  margin: 2em 0;
+  margin-bottom: 2em;
   width: 90%;
   h2,
   p {
-    @include border;
+    @include commonBorder;
     padding: 8px 15px;
     margin: 0;
   }

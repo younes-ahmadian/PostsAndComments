@@ -5,7 +5,7 @@
   border-collapse: collapse;
   th,
   td {
-    @include border;
+    @include commonBorder;
     text-align: center;
     padding: 5px;
   }
