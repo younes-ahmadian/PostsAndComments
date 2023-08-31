@@ -29,3 +29,17 @@ interface FetchDataResult<T> {
   isLoading: boolean;
   error?: unknown;
 }
+
+//another way of fetching data
+// useEffect(() => {
+//   axios
+//     .get(url)
+//     .then((res) => {
+//       setData(res.data);
+//       setIsLoading(false);
+//     })
+//     .catch((err) => {
+//       setError(err);
+//       setIsLoading(false);
+//     });
+// }, [url]);
