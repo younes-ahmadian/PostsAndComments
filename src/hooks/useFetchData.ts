@@ -1,15 +1,18 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import useAbortController from "./useAbortController";
 
 const useFetchData = <T>(url: string): FetchDataResult<T> => {
   const [data, setData] = useState<T | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [error, setError] = useState<unknown>(null);
 
+  const { signal } = useAbortController();
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(url);
+        const response = await axios.get(url, { signal });
         setData(response.data);
         setIsLoading(false);
       } catch (error) {
