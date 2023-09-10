@@ -1,7 +1,7 @@
 import { FC } from "react";
 import CommentContent from "../Comment/ICommentContent";
 import Table from "../Table";
-import styles from "./Comments.module.scss";
+import styles from "./comments.module.scss";
 
 const Comments: FC<{ isLoading: boolean; data: CommentContent[] }> = ({
   isLoading,

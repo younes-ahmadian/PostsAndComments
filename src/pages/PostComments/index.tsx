@@ -3,7 +3,7 @@ import CommentContent from "../../components/Comment/ICommentContent";
 import useFetchData from "../../hooks/useFetchData";
 import SelectedPost from "../../components/SelectedPost";
 import Comments from "../../components/Commetns";
-import styles from "./PostCommetns.module.scss";
+import styles from "./postCommetns.module.scss";
 
 const PostDetials = () => {
   const navigate = useNavigate();

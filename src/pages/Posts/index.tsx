@@ -3,7 +3,7 @@ import PostContent from "../../components/Post/IPostContent";
 import Post from "../../components/Post";
 import useFetchData from "../../hooks/useFetchData";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
-import styles from "./Posts.module.scss";
+import styles from "./posts.module.scss";
 
 const App = () => {
   const [lastElement, setLastElement] = useState<Element | null>(null);

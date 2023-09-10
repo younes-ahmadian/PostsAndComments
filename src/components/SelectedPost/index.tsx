@@ -1,6 +1,6 @@
 import { FC } from "react";
 import PostContent from "../Post/IPostContent";
-import styels from "./SelectedPost.module.scss"
+import styels from "./selectedPost.module.scss"
 
 const SelectedPost: FC<{ post: PostContent }> = ({ post }) => {
   return (
