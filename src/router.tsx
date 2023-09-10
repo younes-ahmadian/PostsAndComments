@@ -1,10 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Posts from "./pages/Posts";
+import RootLayout from "./layout/RootLayout";
 const PostDetails = lazy(() => import("./pages/PostComments"));
 
 const router = createBrowserRouter([
   {
+    path: "/",
+    element: <RootLayout />,
     children: [
       {
         path: "/",
